@@ -1,12 +1,10 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <!-- normalizer cdns -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">     <!-- normalizer has to be before our own css file -->
+    <link rel="stylesheet" href="./style.css">          <!-- shouldn't this be just href="style.css" ? it is already in the same path -->
+    <script defer src="application.js"></script>
     <title>FakeGoogle</title>
 </head>
 
@@ -19,7 +17,7 @@
             <img id="logo" src="./Foogle1.png" alt="fake google logo">
         </section>
 <!-- I saw on MDN there was a form where the method was assigned we may use it -->
-        <form class="form-container" action="" method="get" >
+        <form class="form-container" action="" method="get" >  
             <div class="form-text">
                 <input type="text" name="searchBox" id="searchBox" placeholder="search with Foogle or digit an URL">
             </div>
