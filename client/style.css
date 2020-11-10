@@ -1,7 +1,7 @@
 
-*{
-    box-sizing: border-box;
-}
+/* *{
+    box-sizing: border-box;     we dont need this, i think normalizer does it for us
+} */
 
 main{
     width: 100%;
