@@ -1,20 +1,39 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- normalizer cdns -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
     <title>FakeGoogle</title>
 </head>
-<body>
-    <footer>
-        <h1>Welcome to Foogle!</h1>
-    </footer>
-    <main>
-        <form>
 
+<body>
+    <header>
+        <h2>Welcome to Foogle!</h2>
+    </header>
+    <main>
+        <section id="logo-section">
+            <img id="logo" src="./Foogle1.png" alt="fake google logo">
+        </section>
+<!-- I saw on MDN there was a form where the method was assigned we may use it -->
+        <form class="form-container" action="" method="get" >
+            <div class="form-text">
+                <input type="text" name="name" id="name" >
+            </div>
+            <div id="foogleSearchBtn" class="form-btn">
+                <input type="submit" value="Foogle search!">
+            </div>
+            <div id="goBtn" class="form-btn">
+                <input type="submit" value="Go to website!">
+            </div>
         </form>
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>
