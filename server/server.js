@@ -3,6 +3,9 @@ const cors = require('cors');
 //const bodyParser = require('body-parser');
 const port = 3000;
 
+const musicList = require ("./database");
+const moviesList = require ("./database");
+
 const server = express();
 server.use(cors());
 //server.use(bodyParser.json());
@@ -18,6 +21,8 @@ drinks = ["Whiskey","Beer","Wine","Jin","Tequila"];
 server.get('/', (req, res) => res.send('Hello World!'))
 
 server.get('/music', (req, res) => res.send({music}));
+server.get('/musicList', (req, res) => res.send({musicList}));
 server.get('/movies', (req, res) => res.send({movies}));
 server.get('/food', (req, res) => res.send({food}));
 server.get('/drinks', (req, res) => res.send({drinks}));
+

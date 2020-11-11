@@ -31,10 +31,12 @@ const movies = [
 
 
 //functions to export the database
-function getMovies(movies){
-    return movies;
-}
+// function getMovies(movies){
+//     return movies;
+// }
 
-function getAlbum(music){
-    return music;
-}
+// function getAlbum(music){
+//     return music;
+// }
+
+export { music, movies};
