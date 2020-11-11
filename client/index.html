@@ -3,37 +3,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">     
-    <link rel="stylesheet" href="./style.css"> 
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style2.css"> 
     <script defer src="application.js"></script>
-    <title>FakeGoogle</title>
+    <title>Foogle</title>
 </head>
-
 <body>
     <header>
-        <h2>Welcome to Foogle!</h2>
+        <h1>Welcome to our fake Google</h1>
     </header>
     <main>
-        <section id="logo-section">
-            <img id="logo" src="./Foogle1.png" alt="fake google logo">
-        </section>
-<!-- I saw on MDN there was a form where the method was assigned we may use it -->
-        <form class="form-container" action="" method="get" >  
-            <div class="form-text">
-                <input type="text" name="searchBox" id="searchBox" placeholder="search with Foogle or digit an URL">
-            </div>
+        <div id="logoContainer">
+            <img id="logo" src="Foogle1.png" alt="fake google logo">
+        </div>
+        <form id="myForm">
+            <input id="searchBox" type="text" name="searchBox" placeholder="Search something">
             <div id="buttonContainer">
-                <div>
-                    <input  id="foogleSearchBtn" class="form-btn" type="submit" value="Foogle search!">
-                </div>
-                <div>
-                    <input id="goBtn" class="form-btn" type="submit" value="Go to website!">
-                </div>
+                <input id="foogleSearch" type="submit" value="Foogle search!">
+                <input id="goToResult" type="submit" value="Go to website!">
             </div>
         </form>
     </main>
     <footer>
-        <p>created by Stylianos Thomas and Paola | November 2020</p>
+        <h2>Created by Stylianos and Paola | November 2020</h2>
+        <p>Any similarities to Google are totaly coincidental!</p>
     </footer>
 </body>
-
 </html>
