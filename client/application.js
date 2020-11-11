@@ -18,8 +18,9 @@ foogleSearch.addEventListener('click', e => {
 function extractData (jsonData) {
     console.log(jsonData);
     console.log(userInput);
-    resultlabel = jsonData[userInput].Label;
-    resultUrl = jsonData[userInput].Url;
+    // resultlabel = Object.keys(jsonData)
+    // console.log(resultlabel)
+    //resultUrl = jsonData[userInput].Url;
 };
 
 function displayData() {

@@ -44,11 +44,11 @@ server.get('/', (req, res) => res.send('Hello World!'))
 
 server.get('/music', (req, res) => res.send({music}));
 server.get('/movies', (req, res) => res.send({movies}));
-server.get('/random', (req, res) => res.send(getRandom()));
+// server.get('/random', (req, res) => res.send(getRandom()));
 // server.get('/food', (req, res) => res.send({food}));
 // server.get('/drinks', (req, res) => res.send({drinks}));
 
-function getRandom(music) {
-    let result = music[Math.floor(Math.random()*music.length)]
-    return music[result].Url
-};
+// function getRandom(music) {
+//     let result = music[Math.floor(Math.random()*music.length)]
+//     return music[result].Url
+// };
